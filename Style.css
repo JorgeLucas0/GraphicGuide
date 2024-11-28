@@ -1,0 +1,146 @@
+ /* Estilos Gerais */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Container das Placas de Vídeo */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Cards das Placas de Vídeo */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    padding: 0 15px;
+}
+
+.card a {
+    display: block;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.card a:hover {
+    background-color: #218838;
+}
+
+/* Efeito Tooltip - Caixinha Flutuante */
+.tooltip {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Abas */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background-color: #eee;
+    margin-top: 15px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tab-button:hover {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+}
+
+.active-tab {
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
