@@ -1,12 +1,10 @@
- /* Estilos Gerais */
- body {
+body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
 
-/* Cabeçalho */
 header {
     background-color: #333;
     color: white;
@@ -28,7 +26,6 @@ header a:hover {
     text-decoration: underline;
 }
 
-/* Container das Placas de Vídeo */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +34,6 @@ header a:hover {
     gap: 20px;
 }
 
-/* Cards das Placas de Vídeo */
 .card {
     background-color: #fff;
     border-radius: 8px;
@@ -83,7 +79,6 @@ header a:hover {
     background-color: #218838;
 }
 
-/* Efeito Tooltip - Caixinha Flutuante */
 .tooltip {
     position: absolute;
     top: 10px;
@@ -105,7 +100,6 @@ header a:hover {
     opacity: 1;
 }
 
-/* Abas */
 .tabs {
     display: flex;
     justify-content: space-around;
@@ -136,7 +130,6 @@ header a:hover {
     display: block;
 }
 
-/* Footer */
 footer {
     background-color: #333;
     color: white;
