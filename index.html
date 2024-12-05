@@ -14,15 +14,12 @@
         <a href="#">Contato</a>
     </header>
 
-    <!-- Título Principal -->
     <div style="text-align: center; padding: 50px 0;">
         <h1>Graphic Guide</h1>
         <p>Encontre as melhores Placas de Vídeo para o seu PC!</p>
     </div>
 
-    <!-- Container de Placas de Vídeo -->
     <div class="container">
-        <!-- Card 1: RTX 4060 -->
         <div class="card">
             <img src="https://images2.kabum.com.br/produtos/fotos/469132/placa-de-video-rtx-4060-ventus-2x-black-oc-msi-nvidia-geforce-8gb-gddr6-dlss-ray-tracing_1688052210_g.jpg" alt="Placa RTX 4060">
             <h3>Placa de Vídeo RTX 4060</h3>
@@ -30,13 +27,11 @@
             <a href="https://www.kabum.com.br/produto/469132">Comprar Agora</a>
             <div class="tooltip">Desempenho incrível com Ray Tracing!</div>
 
-            <!-- Abas de Descrição -->
             <div class="tabs">
                 <button class="tab-button" onclick="openTab(event, 'description-rtx4060')">Descrição</button>
                 <button class="tab-button" onclick="openTab(event, 'specs-rtx4060')">Especificações</button>
             </div>
 
-            <!-- Conteúdo das Abas -->
             <div id="description-rtx4060" class="tab-content">
                 <p>A RTX 4060 oferece desempenho de ponta com Ray Tracing e DLSS 3, garantindo uma experiência de jogo ultra-realista. Ideal para gamers e criadores de conteúdo que exigem qualidade visual e alto FPS.</p>
             </div>
@@ -51,7 +46,6 @@
             </div>
         </div>
 
-        <!-- Card 2: RTX 3060 -->
         <div class="card">
             <img src="https://images7.kabum.com.br/produtos/fotos/150657/placa-de-video-galax-geforce-rtx-3060-1-click-oc-15-gbps-12gb-gddr6-ray-tracing-dlss-36nol7md1voc_1614253646_g.jpg" alt="Placa RTX 3060">
             <h3>Placa de Vídeo RTX 3060</h3>
@@ -59,13 +53,11 @@
             <a href="https://www.kabum.com.br/produto/150657">Comprar Agora</a>
             <div class="tooltip">Perfeita para jogos de alta performance!</div>
 
-            <!-- Abas de Descrição -->
             <div class="tabs">
                 <button class="tab-button" onclick="openTab(event, 'description-rtx3060')">Descrição</button>
                 <button class="tab-button" onclick="openTab(event, 'specs-rtx3060')">Especificações</button>
             </div>
 
-            <!-- Conteúdo das Abas -->
             <div id="description-rtx3060" class="tab-content">
                 <p>A RTX 3060 oferece um desempenho excepcional em 1440p, com Ray Tracing e DLSS para otimizar a experiência de jogos e criadores de conteúdo.</p>
             </div>
@@ -80,7 +72,6 @@
             </div>
         </div>
 
-        <!-- Card 3: GTX 1650 -->
         <div class="card">
             <img src="https://images3.kabum.com.br/produtos/fotos/115753/placa-de-video-galax-nvidia-geforce-gtx-1650-ex-plus-1-click-oc-4gb-gddr6-65sql8ds93e1_1596552493_g.jpg" alt="Placa GTX 1650">
             <h3>Placa de Vídeo GTX 1650</h3>
@@ -88,13 +79,11 @@
             <a href="https://www.kabum.com.br/produto/115753">Comprar Agora</a>
             <div class="tooltip">Ideal para gamers de orçamento mais limitado!</div>
 
-            <!-- Abas de Descrição -->
             <div class="tabs">
                 <button class="tab-button" onclick="openTab(event, 'description-gtx1650')">Descrição</button>
                 <button class="tab-button" onclick="openTab(event, 'specs-gtx1650')">Especificações</button>
             </div>
 
-            <!-- Conteúdo das Abas -->
             <div id="description-gtx1650" class="tab-content">
                 <p>A GTX 1650 oferece excelente desempenho para jogos em 1080p e é uma ótima opção para quem deseja uma placa de vídeo acessível e eficiente.</p>
             </div>
@@ -110,27 +99,23 @@
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Graphic Guide. Todos os direitos reservados.</p>
     </footer>
 
     <script>
         function openTab(evt, tabName) {
-            // Esconde todos os conteúdos
             var i, tabContent, tabButtons;
             tabContent = document.getElementsByClassName("tab-content");
             for (i = 0; i < tabContent.length; i++) {
                 tabContent[i].classList.remove("active-tab");
             }
 
-            // Remove a classe ativa dos botões
             tabButtons = document.getElementsByClassName("tab-button");
             for (i = 0; i < tabButtons.length; i++) {
                 tabButtons[i].classList.remove("active");
             }
 
-            // Exibe o conteúdo da aba e adiciona a classe ativa ao botão
             document.getElementById(tabName).classList.add("active-tab");
             evt.currentTarget.classList.add("active");
         }
