@@ -269,3 +269,18 @@ footer p {
 .carousel-container {
     animation: slide 15s infinite;
 }
+
+
+
+
+@media (max-width: 768px) {
+   
+    body {
+        font-size: 16px;
+    }
+    
+    .menu {
+        display: block; 
+    }
+}
+
